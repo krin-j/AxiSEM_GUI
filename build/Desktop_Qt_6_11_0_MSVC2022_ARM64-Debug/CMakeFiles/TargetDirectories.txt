@@ -1,8 +1,0 @@
-C:/Users/Jake1/Documents/CS Files/Qt/axisem3d_v1/build/Desktop_Qt_6_11_0_MSVC2022_ARM64-Debug/CMakeFiles/axisem3d_v1.dir
-C:/Users/Jake1/Documents/CS Files/Qt/axisem3d_v1/build/Desktop_Qt_6_11_0_MSVC2022_ARM64-Debug/CMakeFiles/edit_cache.dir
-C:/Users/Jake1/Documents/CS Files/Qt/axisem3d_v1/build/Desktop_Qt_6_11_0_MSVC2022_ARM64-Debug/CMakeFiles/rebuild_cache.dir
-C:/Users/Jake1/Documents/CS Files/Qt/axisem3d_v1/build/Desktop_Qt_6_11_0_MSVC2022_ARM64-Debug/CMakeFiles/list_install_components.dir
-C:/Users/Jake1/Documents/CS Files/Qt/axisem3d_v1/build/Desktop_Qt_6_11_0_MSVC2022_ARM64-Debug/CMakeFiles/install.dir
-C:/Users/Jake1/Documents/CS Files/Qt/axisem3d_v1/build/Desktop_Qt_6_11_0_MSVC2022_ARM64-Debug/CMakeFiles/install/local.dir
-C:/Users/Jake1/Documents/CS Files/Qt/axisem3d_v1/build/Desktop_Qt_6_11_0_MSVC2022_ARM64-Debug/CMakeFiles/axisem3d_v1_autogen_timestamp_deps.dir
-C:/Users/Jake1/Documents/CS Files/Qt/axisem3d_v1/build/Desktop_Qt_6_11_0_MSVC2022_ARM64-Debug/CMakeFiles/axisem3d_v1_autogen.dir

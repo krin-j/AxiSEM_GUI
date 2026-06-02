@@ -14,6 +14,3 @@ This GUI aims to provide a user-friendly interface for configuring and running A
 - C++17 compiler
 - CMake 3.19+
 
-## License
-
-MIT
