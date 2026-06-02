@@ -11,6 +11,18 @@ qt_add_executable(axisem3d_v1
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+    NrText.h
+    NrText.cpp
+    udpfieldswidget.h udpfieldswidget.cpp udpfieldswidget.ui
+    model3dwidget.h model3dwidget.cpp
+    outputgroupwidget.h outputgroupwidget.cpp
+    sourcewidget.h sourcewidget.cpp
+    resources.qrc
+    styles/main.qss
+    styles/button.qss
+
+
+
 )
 
 target_link_libraries(axisem3d_v1

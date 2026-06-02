@@ -6,428 +6,1309 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>633</width>
+    <height>601</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QStackedWidget" name="stackedWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>481</width>
-      <height>561</height>
-     </rect>
-    </property>
-    <property name="currentIndex">
-     <number>1</number>
-    </property>
-    <widget class="QWidget" name="page_home">
-     <widget class="QLabel" name="label_model">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>60</y>
-        <width>121</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>AxiSEM3D Launcher</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="BtnLocal">
-      <property name="geometry">
-       <rect>
-        <x>100</x>
-        <y>190</y>
-        <width>91</width>
-        <height>18</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Run Local</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="BtnRemote">
-      <property name="geometry">
-       <rect>
-        <x>260</x>
-        <y>190</y>
-        <width>91</width>
-        <height>18</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Run Remote</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="page_local">
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>50</y>
-        <width>37</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Mesh File</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineMeshPath">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>90</y>
-        <width>113</width>
-        <height>20</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="btnBrowseMesh">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>70</y>
-        <width>56</width>
-        <height>18</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Browse...</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_2">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>50</y>
-        <width>81</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Stations File</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="btnBrowseStations">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>70</y>
-        <width>56</width>
-        <height>18</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Browse...</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineStationsPath">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>90</y>
-        <width>113</width>
-        <height>20</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="btnAdvanced">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>140</y>
-        <width>56</width>
-        <height>18</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Advanced</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="btnModel">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>140</y>
-        <width>56</width>
-        <height>18</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Model</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="btnNr">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>140</y>
-        <width>56</width>
-        <height>18</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Nr</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="btnOutput">
-      <property name="geometry">
-       <rect>
-        <x>280</x>
-        <y>140</y>
-        <width>56</width>
-        <height>18</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Output</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="btnSource">
-      <property name="geometry">
-       <rect>
-        <x>350</x>
-        <y>140</y>
-        <width>56</width>
-        <height>18</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Source</string>
-      </property>
-     </widget>
-     <widget class="QStackedWidget" name="stackedLocalSections">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>180</y>
-        <width>411</width>
-        <height>361</height>
-       </rect>
-      </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>3</number>
       </property>
-      <widget class="QWidget" name="pageAdvanced">
-       <layout class="QVBoxLayout" name="verticalLayout">
+      <widget class="QWidget" name="page_home">
+       <layout class="QVBoxLayout" name="verticalLayout_8">
         <item>
-         <widget class="QScrollArea" name="scrollArea">
-          <property name="widgetResizable">
+         <widget class="QLabel" name="labelMain">
+          <property name="font">
+           <font>
+            <family>Imprint MT Shadow</family>
+            <pointsize>72</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>AxiSEM3D</string>
+          </property>
+          <property name="scaledContents">
            <bool>true</bool>
           </property>
-          <widget class="QWidget" name="scrollAreaWidgetContents">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>0</y>
-             <width>380</width>
-             <height>493</height>
-            </rect>
-           </property>
-           <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnLocal">
+          <property name="text">
+           <string>Run Local</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnRemote">
+          <property name="text">
+           <string>Run Remote</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_local">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="2" column="5" colspan="2">
+         <widget class="QLineEdit" name="lineStationsPath"/>
+        </item>
+        <item row="3" column="2">
+         <widget class="QPushButton" name="btnModel3D">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>3D Models</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4">
+         <widget class="QPushButton" name="btnOutput">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Output</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="btnAdvanced">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Advanced</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QPushButton" name="btnModel">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Model</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QPushButton" name="btnBrowseMesh">
+          <property name="text">
+           <string>Browse...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5" colspan="2">
+         <widget class="QPushButton" name="btnBrowseStations">
+          <property name="text">
+           <string>Browse...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0" colspan="7">
+         <widget class="QStackedWidget" name="stackedLocalSections">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="currentIndex">
+           <number>3</number>
+          </property>
+          <widget class="QWidget" name="page_advanced">
+           <layout class="QVBoxLayout" name="verticalLayout">
             <item>
-             <widget class="QLabel" name="label_3">
-              <property name="text">
-               <string>Verbose:</string>
+             <widget class="QScrollArea" name="scrollArea">
+              <property name="widgetResizable">
+               <bool>true</bool>
               </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_4">
-              <property name="text">
-               <string>Channel</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="comboVerboseChannel">
-              <item>
-               <property name="text">
-                <string>STDOUT</string>
+              <widget class="QWidget" name="scrollAreaWidgetContents">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>257</width>
+                 <height>425</height>
+                </rect>
                </property>
+               <layout class="QVBoxLayout" name="verticalLayout_2">
+                <item>
+                 <widget class="QGroupBox" name="grpVerbose">
+                  <property name="title">
+                   <string>Verbose</string>
+                  </property>
+                  <layout class="QFormLayout" name="formVerbose">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_4">
+                     <property name="text">
+                      <string>Channel:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QComboBox" name="comboVerboseChannel">
+                     <item>
+                      <property name="text">
+                       <string>STDOUT</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>File</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QPushButton" name="btnBrowseVerboseChannel">
+                     <property name="text">
+                      <string>Browse If File</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QLineEdit" name="lineVerboseChannelPath"/>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="label_5">
+                     <property name="text">
+                      <string>Level:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QComboBox" name="comboVerboseLevel">
+                     <item>
+                      <property name="text">
+                       <string>NONE</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>ESSENTIAL</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>DETAILED</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item row="3" column="1">
+                    <widget class="QCheckBox" name="checkVerboseWarnings">
+                     <property name="text">
+                      <string>Enable Warnings</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="4" column="0">
+                    <widget class="QLabel" name="label_7">
+                     <property name="toolTip">
+                      <string>Time step interval to display time loop info</string>
+                     </property>
+                     <property name="text">
+                      <string>Loop Info Interval:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="4" column="1">
+                    <widget class="QLineEdit" name="lineLoopInterval">
+                     <property name="text">
+                      <string>1000</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="5" column="0">
+                    <widget class="QLabel" name="label_8">
+                     <property name="toolTip">
+                      <string>Time step interval for stability check</string>
+                     </property>
+                     <property name="text">
+                      <string>Stability Interval:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="5" column="1">
+                    <widget class="QLineEdit" name="lineStabilityInterval">
+                     <property name="text">
+                      <string>1</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="grpMPI">
+                  <property name="title">
+                   <string>MPI</string>
+                  </property>
+                  <layout class="QFormLayout" name="formMPI">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_9">
+                     <property name="text">
+                      <string>Processors Per Group:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLineEdit" name="lineNumProcessorsPerGroup">
+                     <property name="text">
+                      <string>1</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="label_10">
+                     <property name="text">
+                      <string>Load Balancing Weight:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QComboBox" name="loadBalancingBox">
+                     <item>
+                      <property name="text">
+                       <string>ELEMENT</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>ELEMENT_POINT</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QCheckBox" name="checkBoxPlotDomainDecomp">
+                     <property name="text">
+                      <string>Plot Domain Decomposition</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="grpDevelop">
+                  <property name="title">
+                   <string>Develop</string>
+                  </property>
+                  <layout class="QFormLayout" name="formDevelop">
+                   <item row="0" column="1">
+                    <widget class="QCheckBox" name="checkBoxDiagnosePreloop">
+                     <property name="text">
+                      <string>Diagnose Preloop</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="label_12">
+                     <property name="toolTip">
+                      <string>Max Number of Time Steps (use 0 to free this limit)</string>
+                     </property>
+                     <property name="text">
+                      <string>Max Time Steps:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QLineEdit" name="lineMaxNumTimeSteps">
+                     <property name="text">
+                      <string>0</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="label_13">
+                     <property name="toolTip">
+                      <string>Time Limit For FFTW Planning</string>
+                     </property>
+                     <property name="text">
+                      <string>FFTW Time Limit:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QLineEdit" name="lineTimeLimitFFTW">
+                     <property name="text">
+                      <string>60</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="1">
+                    <widget class="QCheckBox" name="checkBoxFFTWLuckyNum">
+                     <property name="text">
+                      <string>FFTW Lucky Numbers</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_model">
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QScrollArea" name="scrollArea_2">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_2">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>470</width>
+                 <height>383</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_3">
+                <item>
+                 <widget class="QGroupBox" name="grpGeodesy">
+                  <property name="title">
+                   <string>Geodesy</string>
+                  </property>
+                  <layout class="QFormLayout" name="formGeodesy">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_15">
+                     <property name="toolTip">
+                      <string>The latitude and longitude of the north pole of the computational coordinate system. Use SOURCE to let it be determined by the first source in list_of_sources.</string>
+                     </property>
+                     <property name="text">
+                      <string>Lat/Long of North Pole:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QComboBox" name="comboBoxLatLongNP">
+                     <item>
+                      <property name="text">
+                       <string>Array (Type Under)</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>SOURCE (determined by the FIRST source presented in list_of_sources in Source)</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="label_14">
+                     <property name="toolTip">
+                      <string>Custom north-pole coordinates as [latitude, longitude] array when using Array mode.</string>
+                     </property>
+                     <property name="text">
+                      <string>Custom [lat, lon]:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QLineEdit" name="lineEditNP">
+                     <property name="text">
+                      <string>[90., 0.]</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="label_16">
+                     <property name="toolTip">
+                      <string>Flattening of the ellipsoid surface. Choose a preset or enter a custom number.</string>
+                     </property>
+                     <property name="text">
+                      <string>Flattening on Surface:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QComboBox" name="comboBoxFlatteningSurface">
+                     <item>
+                      <property name="text">
+                       <string>Custom Number</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>SPHERE</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>WGS84</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>GRS80</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>SPECFEM3D_GLOBE</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="QLabel" name="label_17">
+                     <property name="toolTip">
+                      <string>Custom numeric flattening value when using Custom Number mode.</string>
+                     </property>
+                     <property name="text">
+                      <string>Custom Flattening:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="1">
+                    <widget class="QLineEdit" name="lineFlatteningCustomNum">
+                     <property name="text">
+                      <string>0.0033</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="grpAbsorbingBoundaries">
+                  <property name="title">
+                   <string>Absorbing Boundaries</string>
+                  </property>
+                  <layout class="QFormLayout" name="formAbsorbingBoundaries">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_18">
+                     <property name="toolTip">
+                      <string>A subset of [RIGHT, BOTTOM, TOP]. The mesh has four outer boundaries: left (axial), right, bottom and top (surface). Right, bottom and top can be absorbing. Use [] to disable (stress-free). Most common: [RIGHT, BOTTOM].</string>
+                     </property>
+                     <property name="text">
+                      <string>Boundaries:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLineEdit" name="lineBoundaries">
+                     <property name="text">
+                      <string>[RIGHT, BOTTOM]</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QCheckBox" name="checkBoxClayton">
+                     <property name="text">
+                      <string>Enable Clayton Enquist</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="label_19">
+                     <property name="text">
+                      <string>Kosloff &amp; Kosloff:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QCheckBox" name="checkBoxKosloff">
+                     <property name="text">
+                      <string>Enable</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="QLabel" name="label_20">
+                     <property name="toolTip">
+                      <string>Must match the order of absorbing_boundaries. The mesh should be slightly larger than the computational domain. Allowed range: 0.01–0.25. E.g., 0.05 on a 110 km mesh gives a 5.5 km sponge layer.</string>
+                     </property>
+                     <property name="text">
+                      <string>Relative Spans:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="1">
+                    <widget class="QLineEdit" name="lineRelativeSpans">
+                     <property name="text">
+                      <string>[.05, .05]</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="4" column="0">
+                    <widget class="QLabel" name="label_22">
+                     <property name="toolTip">
+                      <string>γ-factor for absorbing strength (solid). Arguments: VP, VS (wave velocities), RHO (density), SPAN (sponge layer span), T0 (mesh period). Multiplied by a pattern function decreasing from 1 at the mesh boundary to 0 at the inner edge. Default from Haindl et al., 2020.</string>
+                     </property>
+                     <property name="text">
+                      <string>Gamma Expr Solid:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="4" column="1">
+                    <widget class="QLineEdit" name="lineGammaSolid"/>
+                   </item>
+                   <item row="5" column="0">
+                    <widget class="QLabel" name="label_23">
+                     <property name="toolTip">
+                      <string>Same as gamma_expr_solid but without VS dependency (fluid has no shear wave).</string>
+                     </property>
+                     <property name="text">
+                      <string>Gamma Expr Fluid:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="5" column="1">
+                    <widget class="QLineEdit" name="lineGammaFluid"/>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="grpAttenuation">
+                  <property name="title">
+                   <string>Attenuation</string>
+                  </property>
+                  <layout class="QFormLayout" name="formAttenuation">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_24">
+                     <property name="toolTip">
+                      <string>Attenuation mode. NONE disables attenuation, FULL uses full attenuation, CG4 uses coarse-grained attenuation on 4 GLL points.</string>
+                     </property>
+                     <property name="text">
+                      <string>Mode:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QComboBox" name="attenuationBox">
+                     <item>
+                      <property name="text">
+                       <string>NONE</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>FULL</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>CG4</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_3d">
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_25">
+              <property name="text">
+               <string>Even if using a 1D model, at least one model is needed.
+
+Select the amount of 3D models needed for your project.
+</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignmentFlag::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="boxHowMany3D"/>
+            </item>
+            <item>
+             <widget class="QScrollArea" name="scrollArea3D">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaContents3D">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>76</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="layout3DModels">
+                <item>
+                 <spacer name="spacer3D">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_nr">
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QScrollArea" name="scrollArea_3">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_3">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>585</width>
+                 <height>735</height>
+                </rect>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <item>
+                 <widget class="QGroupBox" name="grpNrType">
+                  <property name="title">
+                   <string>Nr Type</string>
+                  </property>
+                  <layout class="QFormLayout" name="formNrType">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_26">
+                     <property name="toolTip">
+                      <string>CONSTANT: Nr(s,z) = const. ANALYTICAL: analytical Nr(s,z) defined in NrFieldAnalytical.cpp. POINTWISE: Nr at discrete control points. STRUCTURED: Nr on a structured grid.</string>
+                     </property>
+                     <property name="text">
+                      <string>Type:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QComboBox" name="comboBoxNrType">
+                     <item>
+                      <property name="text">
+                       <string>CONSTANT</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>ANALYTICAL</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>POINTWISE</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>STRUCTURED</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QCheckBox" name="checkBoxNrInplane">
+                     <property name="text">
+                      <string>Bound Nr By Inplane</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="grpConstant">
+                  <property name="title">
+                   <string>Constant</string>
+                  </property>
+                  <layout class="QFormLayout" name="formConstant">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_27">
+                     <property name="toolTip">
+                      <string>Constant value for Nr. For an axisymmetric model with a single axial source, use 5 for moment tensor (earthquake), 3 for force vector (impact), 1 for pressure (explosion).</string>
+                     </property>
+                     <property name="text">
+                      <string>Value:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLineEdit" name="lineConstNr">
+                     <property name="text">
+                      <string>100</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="grpAnalytical">
+                  <property name="title">
+                   <string>Analytical</string>
+                  </property>
+                  <layout class="QFormLayout" name="formAnalytical">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_29">
+                     <property name="toolTip">
+                      <string>NrFieldAnalytical::sCodeID in NrFieldAnalytical.cpp (line 18).</string>
+                     </property>
+                     <property name="text">
+                      <string>Code ID:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLineEdit" name="lineEditCodeID"/>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="label_21">
+                     <property name="text">
+                      <string>Preview:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QLabel" name="labelCodeID">
+                     <property name="text">
+                      <string>hold</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="label_30">
+                     <property name="toolTip">
+                      <string>Depth values at which Nr is controlled for the analytical field.</string>
+                     </property>
+                     <property name="text">
+                      <string>Control Depths:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QLineEdit" name="lineNrControlDepths"/>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="QLabel" name="label_31">
+                     <property name="toolTip">
+                      <string>Nr values corresponding to each control depth.</string>
+                     </property>
+                     <property name="text">
+                      <string>Nr at Control Depths:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="1">
+                    <widget class="QLineEdit" name="lineNrAtControlDepths"/>
+                   </item>
+                   <item row="4" column="0">
+                    <widget class="QLabel" name="label_32">
+                     <property name="toolTip">
+                      <string>Arbitrary parameters with arbitrary names and types, depending on how they are read and used in NrFieldAnalytical.cpp.</string>
+                     </property>
+                     <property name="text">
+                      <string>User-Defined Params:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="4" column="1">
+                    <widget class="UDPFieldsWidget" name="udpWidget" native="true">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                       <horstretch>0</horstretch>
+                       <verstretch>1</verstretch>
+                      </sizepolicy>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="grpPointwise">
+                  <property name="title">
+                   <string>Pointwise</string>
+                  </property>
+                  <layout class="QFormLayout" name="formPointwise">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_34">
+                     <property name="toolTip">
+                      <string>Must contain: pointwise_sz (double, X×2, s/z of control points) and pointwise_Nr (int, X, Nr values). Unit: meters. Interpolation uses inverse distance weighting.</string>
+                     </property>
+                     <property name="text">
+                      <string>NC Data File:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QPushButton" name="btnBrowsePointwise">
+                     <property name="text">
+                      <string>Browse...</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="label_33">
+                     <property name="text">
+                      <string>File Path:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QLineEdit" name="linePointwisePath"/>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="label_37">
+                     <property name="toolTip">
+                      <string>Factor multiplied to Nr(s,z) from the pointwise data file.</string>
+                     </property>
+                     <property name="text">
+                      <string>Factor:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QLineEdit" name="lineNrFactor"/>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="grpStructured">
+                  <property name="title">
+                   <string>Structured</string>
+                  </property>
+                  <layout class="QFormLayout" name="formStructured">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_39">
+                     <property name="toolTip">
+                      <string>Cartesian mesh: structured_s (double, M), structured_z (double, N), structured_Nr (int, M×N). Spherical mesh: replace _s/_z with _r/_t (θ). Units: meters for s/z/r, radians for θ.</string>
+                     </property>
+                     <property name="text">
+                      <string>NC Data File:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QPushButton" name="pushBrowseStructured">
+                     <property name="text">
+                      <string>Browse</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="label_38">
+                     <property name="text">
+                      <string>File Path:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QLineEdit" name="lineStructuredPath"/>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="label_40">
+                     <property name="toolTip">
+                      <string>Value of Nr at any location outside the structured grid range.</string>
+                     </property>
+                     <property name="text">
+                      <string>Nr Out of Range:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QLineEdit" name="lineStructuredOutOfRange"/>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="grpWavefieldScanning">
+                  <property name="toolTip">
+                   <string>AxiSEM3D learns a sub-optimal Nr(s,z) during simulation and dumps it to a file for re-use. It analyzes the Fourier series at mesh points upon energy peak arrival. To re-use: set type_Nr = POINTWISE and point nc_data_file to the scanning output.</string>
+                  </property>
+                  <property name="title">
+                   <string>Wavefield Scanning</string>
+                  </property>
+                  <layout class="QFormLayout" name="formWavefieldScanning">
+                   <item row="0" column="1">
+                    <widget class="QCheckBox" name="checkWavefieldScanningOn">
+                     <property name="text">
+                      <string>Enable Scanning</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="label_43">
+                     <property name="toolTip">
+                      <string>File path for the wavefield scanning output.</string>
+                     </property>
+                     <property name="text">
+                      <string>Output File:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QLineEdit" name="lineWavefieldOutputFile"/>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="label_44">
+                     <property name="toolTip">
+                      <string>Accuracy loss by truncating the Fourier series of the wavefield. Allowed range: [1e-4, 1e-1].</string>
+                     </property>
+                     <property name="text">
+                      <string>Threshold Fourier Conv:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QLineEdit" name="lineThresholdFourierConv"/>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="QLabel" name="label_45">
+                     <property name="toolTip">
+                      <string>Peaks with amplitude smaller than this × largest peak are skipped. 1.0 = only largest peak, 0.0 = all peaks. Range: [0.0, 1.0].</string>
+                     </property>
+                     <property name="text">
+                      <string>Relative Amp Skip:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="1">
+                    <widget class="QLineEdit" name="lineRelativeAmpSkip"/>
+                   </item>
+                   <item row="4" column="0">
+                    <widget class="QLabel" name="label_47">
+                     <property name="toolTip">
+                      <string>Absolute amplitude threshold for skipping energy peaks. Allowed range: [1e-14, 1e-10].</string>
+                     </property>
+                     <property name="text">
+                      <string>Absolute Amp Skip:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="4" column="1">
+                    <widget class="QLineEdit" name="lineAbsAmpSkip"/>
+                   </item>
+                   <item row="5" column="0">
+                    <widget class="QLabel" name="label_48">
+                     <property name="toolTip">
+                      <string>Maximum number of energy peaks to consider. Use a small value to focus on only the largest peaks.</string>
+                     </property>
+                     <property name="text">
+                      <string>Max Num Peaks:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="5" column="1">
+                    <widget class="QLineEdit" name="lineMaxNumPeaks"/>
+                   </item>
+                   <item row="6" column="1">
+                    <widget class="QCheckBox" name="checkScanOnlyVertexGLL">
+                     <property name="text">
+                      <string>Perform Scanning Only on Vertex GLL Points</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="7" column="0">
+                    <widget class="QLabel" name="label_49">
+                     <property name="toolTip">
+                      <string>Number of steps per mesh period for scanning. Must be at least 4; recommended range: [8, 16].</string>
+                     </property>
+                     <property name="text">
+                      <string>Steps per Mesh Period:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="7" column="1">
+                    <widget class="QLineEdit" name="lineNumStepsPerMeshPeriod"/>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_source">
+           <layout class="QVBoxLayout" name="verticalLayout_source">
+            <item>
+             <widget class="QGroupBox" name="grpTimeAxis">
+              <property name="title">
+               <string>Time Axis</string>
+              </property>
+              <layout class="QFormLayout" name="formTimeAxis">
+               <item row="0" column="0">
+                <widget class="QLabel" name="lblRecordLength">
+                 <property name="toolTip">
+                  <string>The end time in seismograms (seconds). The start time depends on the source-time functions.</string>
+                 </property>
+                 <property name="text">
+                  <string>Record Length (s):</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="lineRecordLength">
+                 <property name="text">
+                  <string>1800.</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="lblEnforcedDt">
+                 <property name="toolTip">
+                  <string>User-specified time step. Use NONE to automatically determine Dt by mesh, or enter a numeric value.</string>
+                 </property>
+                 <property name="text">
+                  <string>Enforced Dt:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="lineEnforcedDt">
+                 <property name="text">
+                  <string>NONE</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="lblCourant">
+                 <property name="toolTip">
+                  <string>Courant number for determining Dt by mesh. Dt increases with this number. Decrease if numerical instability occurs. Safe: 0.5, Aggressive: 1.0. Typical: 0.6-0.7.</string>
+                 </property>
+                 <property name="text">
+                  <string>Courant Number:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="lineCourantNumber">
+                 <property name="text">
+                  <string>0.6</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="lblIntegrator">
+                 <property name="toolTip">
+                  <string>NEWMARK is faster while SYMPLECTIC is less dispersive. Use SYMPLECTIC for ultra-long simulations. Dt can be larger for SYMPLECTIC than for NEWMARK.</string>
+                 </property>
+                 <property name="text">
+                  <string>Time Integrator:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QComboBox" name="comboIntegrator">
+                 <item>
+                  <property name="text">
+                   <string>NEWMARK</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>SYMPLECTIC</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="layoutSourceCount">
+              <item>
+               <widget class="QLabel" name="labelSourceCount">
+                <property name="text">
+                 <string>Number of Sources:</string>
+                </property>
+               </widget>
               </item>
               <item>
-               <property name="text">
-                <string>File</string>
-               </property>
+               <widget class="QSpinBox" name="spinSourceCount">
+                <property name="minimum">
+                 <number>0</number>
+                </property>
+                <property name="maximum">
+                 <number>20</number>
+                </property>
+                <property name="value">
+                 <number>1</number>
+                </property>
+               </widget>
               </item>
-             </widget>
+             </layout>
             </item>
             <item>
-             <widget class="QPushButton" name="btnBrowseVerboseChannel">
-              <property name="text">
-               <string>Browse If File</string>
+             <widget class="QScrollArea" name="scrollAreaSource">
+              <property name="widgetResizable">
+               <bool>true</bool>
               </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineVerboseChannelPath"/>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_5">
-              <property name="text">
-               <string>Level</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="comboVerboseLevel">
-              <item>
-               <property name="text">
-                <string>NONE</string>
+              <widget class="QWidget" name="scrollAreaContentsSource">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>76</width>
+                 <height>16</height>
+                </rect>
                </property>
-              </item>
+               <layout class="QVBoxLayout" name="layoutSources">
+                <item>
+                 <spacer name="spacerSources">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_output">
+           <layout class="QVBoxLayout" name="verticalLayout_output">
+            <item>
+             <widget class="QLabel" name="labelOutputTitle">
+              <property name="text">
+               <string>Station-Wise Output
+
+Configure station groups for recording wavefields.
+Each group can have its own channels, sampling rate, and file format.</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignmentFlag::AlignCenter</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="layoutOutputCount">
               <item>
-               <property name="text">
-                <string>ESSENTIAL</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>DETAILED</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="checkVerboseWarnings">
-              <property name="text">
-               <string>Enable Warnings</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_7">
-              <property name="text">
-               <string>Loop Info Interval (time step interval to display time loop info)</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineLoopInterval">
-              <property name="text">
-               <string>1000</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_8">
-              <property name="text">
-               <string>Stability Interval ( time step interval for stability check)</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineStabilityInterval">
-              <property name="text">
-               <string>1</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_6">
-              <property name="text">
-               <string>MPI:</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_9">
-              <property name="text">
-               <string>Number of Processors Per Group</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineNumProcessorsPerGroup">
-              <property name="text">
-               <string>1</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_10">
-              <property name="text">
-               <string>Weight For Load Balancing</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="loadBalancingBox">
-              <item>
-               <property name="text">
-                <string>ELEMENT</string>
-               </property>
+               <widget class="QLabel" name="labelOutputCount">
+                <property name="text">
+                 <string>Number of Station Groups:</string>
+                </property>
+               </widget>
               </item>
               <item>
-               <property name="text">
-                <string>ELEMENT_POINT</string>
-               </property>
+               <widget class="QSpinBox" name="spinStationGroupCount">
+                <property name="minimum">
+                 <number>0</number>
+                </property>
+                <property name="maximum">
+                 <number>10</number>
+                </property>
+                <property name="value">
+                 <number>1</number>
+                </property>
+               </widget>
               </item>
-             </widget>
+             </layout>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBoxPlotDomainDecomp">
-              <property name="text">
-               <string>Plot Domain Decomposition</string>
+             <widget class="QScrollArea" name="scrollAreaOutput">
+              <property name="widgetResizable">
+               <bool>true</bool>
               </property>
+              <widget class="QWidget" name="scrollAreaContentsOutput">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>76</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="layoutOutputGroups">
+                <item>
+                 <spacer name="spacerOutput">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
              </widget>
             </item>
             <item>
-             <widget class="QLabel" name="label_11">
+             <widget class="QLabel" name="labelElementWise">
               <property name="text">
-               <string>Develop:</string>
+               <string>Element-Wise Output: not yet implemented (defaults to empty []).</string>
               </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="checkBoxDiagnosePreloop">
-              <property name="text">
-               <string>Diagnose Preloop</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_12">
-              <property name="text">
-               <string>Max Number of Time Steps (use 0 to free this limit)</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineMaxNumTimeSteps">
-              <property name="text">
-               <string>0</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_13">
-              <property name="text">
-               <string>Time Limit For FFTW Planning</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="lineTimeLimitFFTW">
-              <property name="text">
-               <string>60</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="checkBoxFFTWLuckyNum">
-              <property name="text">
-               <string>FFTW Lucky Numbers</string>
+              <property name="alignment">
+               <set>Qt::AlignmentFlag::AlignCenter</set>
               </property>
              </widget>
             </item>
@@ -435,139 +1316,418 @@
           </widget>
          </widget>
         </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="pageOutput">
-       <layout class="QVBoxLayout" name="verticalLayout_3">
-        <item>
-         <widget class="QLabel" name="label_14">
+        <item row="3" column="3">
+         <widget class="QPushButton" name="btnNr">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>20</height>
+           </size>
+          </property>
           <property name="text">
-           <string>Geodesy:</string>
+           <string>Nr</string>
           </property>
          </widget>
         </item>
-        <item>
-         <widget class="QLabel" name="label_15">
+        <item row="3" column="6">
+         <widget class="QPushButton" name="btnRun">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
           <property name="text">
-           <string>Lat/Long of North Pole</string>
+           <string>Run!</string>
           </property>
          </widget>
         </item>
-        <item>
-         <widget class="QComboBox" name="comboBoxLatLongNP">
-          <item>
-           <property name="text">
-            <string>Array (Type Under)</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>SOURCE (determined this location by the FIRST source presented in list_of_sources in inparam.source.yaml)</string>
-           </property>
-          </item>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEditNP">
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="label">
           <property name="text">
-           <string>[90., 0.]</string>
+           <string>Mesh File</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
           </property>
          </widget>
         </item>
-        <item>
-         <widget class="QLabel" name="label_16">
+        <item row="2" column="0" colspan="2">
+         <widget class="QLineEdit" name="lineMeshPath"/>
+        </item>
+        <item row="0" column="5" colspan="2">
+         <widget class="QLabel" name="label_2">
           <property name="text">
-           <string>Flattening on Surface</string>
+           <string>Stations File</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
           </property>
          </widget>
         </item>
-        <item>
-         <widget class="QComboBox" name="comboBoxFlatteningSurface">
-          <item>
-           <property name="text">
-            <string>Custom Number</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>SPHERE</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>WGS84</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>GRS80</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>SPECFEM3D_GLOBE</string>
-           </property>
-          </item>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineFlatteningCustomNum">
+        <item row="3" column="5">
+         <widget class="QPushButton" name="btnSource">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
           <property name="text">
-           <string>0.0033</string>
+           <string>Source</string>
           </property>
          </widget>
         </item>
-        <item>
-         <widget class="QLabel" name="label_17">
+        <item row="5" column="3">
+         <widget class="QPushButton" name="btnBackL">
           <property name="text">
-           <string>Absorbing Boundaries:</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_18">
-          <property name="text">
-           <string>Boundaries
-(a subset of [RIGHT, BOTTOM, TOP])
-1) an AxiSEM3D mesh may contain four outer boundaries:
-    #          left (axial), right, bottom and top (surface); the right,
-    #          bottom and top ones can be absorbing boundaries (the left
-    #          or axial one is non-physical)
-2) use [] to disable absorbing boundary condition
-(so that all model boundaries will be stress-free)
-3) the most common case in seismology is [RIGHT, BOTTOM]</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineBoundaries">
-          <property name="text">
-           <string>[RIGHT, BOTTOM]</string>
+           <string>Back</string>
           </property>
          </widget>
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="pageSource"/>
-      <widget class="QWidget" name="pageNr"/>
-      <widget class="QWidget" name="pageModel"/>
+      <widget class="QWidget" name="page_run">
+       <layout class="QVBoxLayout" name="verticalLayout_run">
+        <item>
+         <widget class="QGroupBox" name="grpExePath">
+          <property name="title">
+           <string>AxiSEM3D Executable</string>
+          </property>
+          <layout class="QFormLayout" name="formExePath">
+           <item row="0" column="0">
+            <widget class="QPushButton" name="btnBrowseExe">
+             <property name="text">
+              <string>Locate Executable...</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineExePath">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+             <property name="placeholderText">
+              <string>Path to axisem3d executable</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="lblMpiProcs">
+             <property name="text">
+              <string>MPI Processes:</string>
+             </property>
+             <property name="toolTip">
+              <string>Number of MPI processes for mpirun. Only used for local runs.</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="spinMpiProcs">
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>1024</number>
+             </property>
+             <property name="value">
+              <number>4</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="grpBatchJob">
+          <property name="title">
+           <string>Batch Job (Remote)</string>
+          </property>
+          <layout class="QVBoxLayout" name="layoutBatchJob">
+           <item>
+            <widget class="QCheckBox" name="checkBatchJob">
+             <property name="text">
+              <string>Submit as batch job</string>
+             </property>
+             <property name="toolTip">
+              <string>If checked, write a batch job script and submit it instead of running directly. Only available in remote mode.</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="layoutBatchFilename">
+             <item>
+              <widget class="QLabel" name="lblBatchFilename">
+               <property name="text">
+                <string>Filename:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineBatchFilename">
+               <property name="text">
+                <string>run_axisem3d.sh</string>
+               </property>
+               <property name="placeholderText">
+                <string>e.g. run_axisem3d.sh or job.slurm</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPlainTextEdit" name="editBatchScript">
+             <property name="placeholderText">
+              <string>Write your batch job script here (e.g. SLURM, PBS, SGE)...</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Courier New</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="layoutRunButtons">
+          <item>
+           <widget class="QPushButton" name="btnRunSim">
+            <property name="text">
+             <string>Run</string>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnStopSim">
+            <property name="text">
+             <string>Stop</string>
+            </property>
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnBackRun">
+            <property name="text">
+             <string>Back</string>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="grpRunLog">
+          <property name="title">
+           <string>Output Log</string>
+          </property>
+          <layout class="QVBoxLayout" name="layoutRunLog">
+           <item>
+            <widget class="QPlainTextEdit" name="editRunLog">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+             <property name="font">
+              <font>
+               <family>Courier New</family>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="placeholderText">
+              <string>Simulation output will appear here...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_remote">
+       <layout class="QVBoxLayout" name="verticalLayout_remote">
+        <item>
+         <spacer name="spacerRemoteTop">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelSSHTitle">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>SSH Connection</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QFormLayout" name="formSSH">
+          <item row="0" column="0">
+           <widget class="QLabel" name="labelHost">
+            <property name="text">
+             <string>Host:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineSSHHost">
+            <property name="placeholderText">
+             <string>e.g. cluster.university.edu</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="labelPort">
+            <property name="text">
+             <string>Port:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineSSHPort">
+            <property name="text">
+             <string>22</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="labelUsername">
+            <property name="text">
+             <string>Username:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineSSHUser">
+            <property name="placeholderText">
+             <string>e.g. jsmith</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="labelPassword">
+            <property name="text">
+             <string>Password:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="lineSSHPass">
+            <property name="echoMode">
+             <enum>QLineEdit::EchoMode::Password</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelSSHStatus">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="layoutSSHButtons">
+          <item>
+           <widget class="QPushButton" name="btnBackR">
+            <property name="text">
+             <string>Back</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnSSHConnect">
+            <property name="text">
+             <string>Connect</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="spacerRemoteBottom">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
      </widget>
-    </widget>
-    <widget class="QWidget" name="page_remote"/>
-   </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>18</height>
+     <width>633</width>
+     <height>17</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>UDPFieldsWidget</class>
+   <extends>QWidget</extends>
+   <header>udpfieldswidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

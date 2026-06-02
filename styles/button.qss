@@ -1,0 +1,100 @@
+QPushButton {
+    background-color: #e6e6e6;   /* light grey */
+    border: 1px solid #bdbdbd;   /* slightly darker thin border */
+    border-radius: 2px;
+    color: black;
+    font-weight: 500;
+}
+
+QPushButton:hover {
+    background-color: #dcdcdc;   /* slightly darker on hover */
+    border: 1px solid #a8a8a8;
+}
+
+QPushButton:pressed {
+    background-color: #cfcfcf;   /* pressed state */
+    border: 1px solid #8f8f8f;
+}
+/* Gradient progression: red → green */
+
+QPushButton#btnAdvanced {
+    background-color: rgba(231, 76, 60, 255);
+}
+QPushButton#btnAdvanced:hover {
+    background-color: rgba(231, 76, 60, 200);
+}
+QPushButton#btnAdvanced:pressed {
+    background-color: rgba(231, 76, 60, 150);
+}
+
+
+/* Orange */
+QPushButton#btnModel {
+    background-color: rgba(230, 126, 34, 255);
+}
+QPushButton#btnModel:hover {
+    background-color: rgba(230, 126, 34, 200);
+}
+QPushButton#btnModel:pressed {
+    background-color: rgba(230, 126, 34, 150);
+}
+
+
+/* Yellow */
+QPushButton#btnModel3D {
+    background-color: rgba(241, 196, 15, 255);
+}
+QPushButton#btnModel3D:hover {
+    background-color: rgba(241, 196, 15, 200);
+}
+QPushButton#btnModel3D:pressed {
+    background-color: rgba(241, 196, 15, 150);
+}
+
+
+/* Light green */
+QPushButton#btnNr {
+    background-color: rgba(212, 225, 87, 255);
+}
+QPushButton#btnNr:hover {
+    background-color: rgba(212, 225, 87, 200);
+}
+QPushButton#btnNr:pressed {
+    background-color: rgba(212, 225, 87, 150);
+}
+
+
+/* Soft green */
+QPushButton#btnOutput {
+    background-color: rgba(129, 199, 132, 255);
+}
+QPushButton#btnOutput:hover {
+    background-color: rgba(129, 199, 132, 200);
+}
+QPushButton#btnOutput:pressed {
+    background-color: rgba(129, 199, 132, 150);
+}
+
+
+/* Green */
+QPushButton#btnSource {
+    background-color: rgba(76, 175, 80, 255);
+}
+QPushButton#btnSource:hover {
+    background-color: rgba(76, 175, 80, 200);
+}
+QPushButton#btnSource:pressed {
+    background-color: rgba(76, 175, 80, 150);
+}
+
+
+/* Bright green */
+QPushButton#btnRun {
+    background-color: rgba(46, 204, 113, 255);
+}
+QPushButton#btnRun:hover {
+    background-color: rgba(46, 204, 113, 200);
+}
+QPushButton#btnRun:pressed {
+    background-color: rgba(46, 204, 113, 150);
+}
