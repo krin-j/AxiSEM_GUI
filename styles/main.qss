@@ -1,0 +1,22 @@
+/* ===== GLOBAL APP STYLE ===== */
+
+QWidget {
+    font-family: "Titillium Web";
+    font-size: 12pt;
+    background-color: #f5f5f5;
+    color: black;
+}
+
+QLabel#labelMain {
+    font-family: "Imprint MT Shadow";
+    font-size: 72pt;
+    font-weight: bold;
+}
+
+/* Line edits */
+QLineEdit {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: transparent;
+    color: black;
+}
